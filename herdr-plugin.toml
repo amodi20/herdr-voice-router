@@ -1,0 +1,19 @@
+id = "amodi20.voice-router"
+name = "Voice Router"
+version = "0.2.0"
+min_herdr_version = "0.9.0"
+description = "Send a question to any pane by saying its name. Works with any voice dictation tool, and pairs with a Claude Code plugin that routes from inside Claude panes."
+platforms = ["linux", "macos"]
+
+# Popup you type or dictate into: "ask backend how many users signed up?"
+[[panes]]
+id = "ask"
+title = "Ask a pane"
+placement = "overlay"
+command = ["python3", "pane_router.py", "--once"]
+
+[[actions]]
+id = "ask"
+title = "Ask a pane"
+contexts = ["global"]
+command = ["herdr", "plugin", "pane", "open", "--plugin", "amodi20.voice-router", "--entrypoint", "ask"]

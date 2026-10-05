@@ -1,0 +1,14 @@
+{
+  "name": "herdr-voice-router",
+  "owner": {
+    "name": "Anushri Modi"
+  },
+  "plugins": [
+    {
+      "name": "herdr-voice-router",
+      "source": "./",
+      "description": "Route Claude Code prompts to Herdr panes by saying the pane's name."
+    }
+  ],
+  "description": "Voice-friendly routing between Herdr panes for Claude Code."
+}

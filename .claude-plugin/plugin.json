@@ -1,0 +1,7 @@
+{
+  "name": "herdr-voice-router",
+  "version": "0.2.0",
+  "description": "Say another Herdr pane's name in any Claude Code prompt and the prompt goes to that pane. Also names new panes after their project folder.",
+  "author": { "name": "Anushri Modi" },
+  "repository": "https://github.com/amodi20/herdr-voice-router"
+}
