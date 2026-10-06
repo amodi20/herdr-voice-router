@@ -41,15 +41,17 @@ This adds an **"Ask a pane"** popup you can open from any pane, including plain 
 herdr plugin install amodi20/herdr-voice-router
 ```
 
-To open the popup with **Ctrl+B, A**, add this to `~/.config/herdr/config.toml` and run `herdr server reload-config`:
+To open the popup with **Ctrl+B, Shift+A**, add this to `~/.config/herdr/config.toml` and run `herdr server reload-config`:
 
 ```toml
 [[keys.command]]
-key = "prefix+a"
+key = "prefix+shift+a"
 type = "plugin_action"
 command = "amodi20.voice-router.ask"
 description = "Ask a pane"
 ```
+
+If that key is already taken in your config, use any free one, such as `prefix+i`. To check the popup works without any key, run `herdr plugin action invoke amodi20.voice-router.ask`.
 
 ## Step 4: Name your panes
 

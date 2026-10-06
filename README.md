@@ -56,15 +56,17 @@ Tested on macOS. Linux should work. The Claude Code hook may work on Windows but
 
 ## Keybinding for the popup
 
-To open the Herdr plugin's popup with **Ctrl+B, A**, add this to `~/.config/herdr/config.toml`, then run `herdr server reload-config`:
+To open the Herdr plugin's popup with **Ctrl+B, Shift+A**, add this to `~/.config/herdr/config.toml`, then run `herdr server reload-config`:
 
 ```toml
 [[keys.command]]
-key = "prefix+a"
+key = "prefix+shift+a"
 type = "plugin_action"
 command = "amodi20.voice-router.ask"
 description = "Ask a pane"
 ```
+
+If that key is already taken in your config, use any free one, such as `prefix+i`. To check the popup works without any key, run `herdr plugin action invoke amodi20.voice-router.ask`.
 
 In the popup, type or dictate a sentence that names a pane. If you don't name one, you get a numbered list. You have 2 seconds to press **Esc** before each question is sent.
 
